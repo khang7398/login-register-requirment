@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap');
+
+a {
+  color: #333;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 1px solid #ddd;
+}
+
+nav a:not(:first-child) {
+  margin-left: 20px;
+}
+
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: #777;
+  border-top: 1px solid #eaeaea;
+}
+
+.not-found {
+  text-align: center;
+}
+
+.not-found a {
+  color: #1a1a1a;
+  text-decoration: underline;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Outfit', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans',
+    'Droid Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(241, 241, 241);
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: 'Nunito';
+}
+
+p {
+  font-size: 1.6rem;
+}
+h1 {
+  font-size: 6rem;
+}
+.App .search {
+  text-align: center;
+  padding: 1rem;
+}
+
+.App input {
+  padding: 0.7rem 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f8f8f8;
+}
+
+::placeholder {
+  color: #f8f8f8;
+}
+.App {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #fff;
+}
+
+.App::before {
+  content: '';
+  background: url('../image/sunset.jpg') no-repeat center center/cover;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.container {
+  max-width: 700px;
+  height: 700px;
+  margin: auto;
+  padding: 0 1rem;
+  position: relative;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+
+.app .top {
+  width: 100%;
+  margin: 1rem auto;
+}
+
+.description {
+  position: relative;
+  right: -90%;
+  transform-origin: 0 0;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  width: 100%;
+  margin: 1rem auto;
+  padding: 1rem;
+  border-radius: 12px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  border-radius: 12px;
+  height: 400px;
+  min-width: 20%;
+  background-color: rgb(218, 218, 218);
+}
+.login-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+form {
+  display: flex;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  width: 200px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+input {
+  border: none;
+  padding: 0.35rem;
+  font-family: 'Inter', sans-serif;
+  margin: 0.75rem 0;
+  border-radius: 4px;
+  width: 100%;
+}
+button {
+  cursor: pointer;
+  border: none;
+  align-self: center;
+  margin-top: 1rem;
+  font-size: 1rem;
+  padding: 0.65rem;
+  border-radius: 4px;
+  color: white;
+  background-color: rgb(161, 161, 161);
+}
+.login-register {
+  margin: 2rem 1rem 0 1rem;
+  font-size: 1rem;
+}
+.login-register-link {
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  color: rgb(105, 105, 105);
+  font-weight: 700;
+}
+
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  border-radius: 12px;
+  height: 400px;
+  min-width: 20%;
+  background-color: rgb(218, 218, 218);
+  text-align: center;
+}
+
+.register-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.register-error {
+  margin-top: 1rem;
+  align-self: center;
+  color: rgb(255, 0, 55);
+}
